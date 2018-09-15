@@ -2,22 +2,193 @@
 use std::{i8, i16, i32, i64, u8, u16, u32, u64,
           isize, usize, f32, f64};
 
-use std::io::stdin;
-
 fn main() {
-    // show_type_sizes();
-    // show_age();
-    // show_my_name();
-    // is_it_true_game();
-    // format_some_things();
-    // basic_calculations();
-    // looping();
-    // stringstest1();
-    inputtest1();
-    // TODO https://youtu.be/U1EFgCNLDB8?t=25m47s
+    show_type_sizes();
+    show_age();
+    show_my_name();
+    is_it_true_game();
+    format_some_things();
+    basic_calculations();
+    looping();
+    stringstest1();
+    guessgame();
+    arraytest();
+    vectortest();
+    tupletest();
+    say_hello("Dominik");
+    funcwithparamsandreturntest();
+    functionbindingtest();
+    closurestest();
+    ownertest1();
+    ownertest2();
+    ftest000();
+    structtest1();
+    enumtypetest1();
 }
 
-fn inputtest1() {
+fn enumtypetest1() {
+    let hulk = Hero::Strong(100);
+    let quicksilver = Hero::Fast;
+    let spiderman = Hero::Info { name: "Spiderman".to_owned(), secret: "Peter Parker".to_owned() };
+
+    get_info(&hulk);
+    get_info(&quicksilver);
+    get_info(&spiderman);
+}
+
+enum Hero {
+    Fast,
+    Strong(i32),
+    Info { name: String, secret: String}
+}
+
+fn get_info(h: &Hero) {
+    match *h {
+        Hero::Fast => println!("Fast"),
+        Hero::Strong(i) => println!("Lifts {} tons", i),
+        Hero::Info { ref name, ref secret } => println!("{} is {}", name, secret),
+    }
+}
+
+fn structtest1() {
+    let c1 = Circle { x: 10.0, y: 10.0, radius: 10.0 };
+
+    println!("X: {}, Y: {}, R: {}", c1.x, c1.y, c1.radius);
+    println!("Radius from get_radius: {}", get_radius(&c1));
+    println!("X from member fn get_x: {}", c1.get_x());
+
+    println!("Circle Area: {}", c1.area());
+
+    let r1 = Rectangle { height: 10.0, width: 10.0 };
+
+    println!("Rect Area : {}", r1.area());
+}
+
+struct Rectangle {
+    height: f64,
+    width: f64,
+}
+
+struct Circle {
+    x: f64,
+    y: f64,
+    radius: f64,
+}
+
+trait HasArea {
+    fn area(&self) -> f64;
+}
+
+impl HasArea for Circle {
+    fn area(&self) -> f64 {
+        3.14159 * self.radius * self.radius
+    }
+}
+
+impl HasArea for Rectangle {
+    fn area(&self) -> f64 {
+        self. height * self.width
+    }
+}
+
+fn get_radius(circle: &Circle) -> f64 {
+    circle.radius
+}
+
+impl Circle {
+    pub fn get_x(&self) -> f64 {
+        self.x
+    }
+}
+
+fn ftest000() {
+    let v2 = vec![1,2,3];
+
+    println!("Sum of Vect: {}", sum_vect(&v2));
+    println!("Vect : {:?}", v2);
+}
+
+fn sum_vect(v1: &Vec<i32>) -> i32 {
+    let sum = v1.iter().fold(
+        0,
+        |mut sum, &x| {
+            sum += x; sum
+        }
+    );
+    return sum;
+}
+
+fn ownertest2() {
+    let prim1 = 1;
+    let prim2 = prim1;
+
+    println!("prim1 : {}", prim1);
+}
+
+fn ownertest1() {
+    let v1 = vec![1,2,3];
+    let v2 = v1;
+
+    // println!("v1[0] : {}", v1[0]);
+}
+
+fn closurestest() {
+    let sum_nums = |x: i32, y: i32| x + y;
+    println!("7 + 8 = {}", sum_nums(7, 8));
+
+    let num_ten = 10;
+
+    let add_10 = |x: i32| x + num_ten;
+    println!("5 + 10 = {}", add_10(5));
+}
+
+fn functionbindingtest() {
+    let sum = get_sum;
+    println!("6 + 4 = {}", sum(6, 4));
+}
+
+fn funcwithparamsandreturntest() {
+    println!("5 + 4 = {}", get_sum(5, 4));
+}
+
+fn get_sum(num1: i32, num2: i32) -> i32 {
+    num1 + num2
+}
+
+fn say_hello(name: &str) {
+    println!("Hello {}", name);
+}
+
+fn tupletest() {
+    let mytuple = ("Dominik", 19);
+    let mytuple_2: (&str, i8) = ("Mario", 17);
+
+    println!("{}", mytuple_2.0);
+}
+
+fn vectortest() {
+    let mut vec1 = vec![1,2,3,4,5];
+
+    println!("Item 2 : {}", vec1[1]);
+
+    for i in &vec1 {
+        println!("Vect: {}", i);
+    }
+
+    vec1.push(6);
+
+    vec1.pop();
+}
+
+fn arraytest() {
+    let rand_array = [1,2,3];
+
+    println!("{}", rand_array[0]);
+    println!("{}", rand_array.len());
+    println!("Second 2 : {:?}", &rand_array[1..3]);
+}
+
+fn guessgame() {
     'outer: loop {
         let number: i32 = 10;
         println!("Pick a number");
