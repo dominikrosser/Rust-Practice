@@ -1,0 +1,1 @@
+E:\dev\Rust\Rust-Practice\KISS\ Random\ number\ and\ static\ to\ blackwhite\ image\statickiss-rs\target\release\statickiss-rs.pdb: E:\dev\Rust\Rust-Practice\KISS\ Random\ number\ and\ static\ to\ blackwhite\ image\statickiss-rs\src\main.rs
