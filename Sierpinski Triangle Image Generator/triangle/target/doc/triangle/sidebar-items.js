@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["main","main program"]],"struct":[["Point","points used to build the triangle and plot points on the canvas"]]});
