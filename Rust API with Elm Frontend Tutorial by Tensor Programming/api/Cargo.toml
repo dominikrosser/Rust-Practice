@@ -1,0 +1,37 @@
+[package]
+name = "api"
+version = "0.1.0"
+authors = ["Dominik Rosser <dominik.rosser@protonmail.ch>"]
+
+[dependencies]
+diesel = { version = "1.0.0", features = ["postgres"] }
+diesel_migrations = { version = "1.3.0", features = ["postgres"] }
+dotenv = "0.9.0"
+
+## + (PostgreSQL, diesel_cli)
+## You need to have postgres sql installed and then run this command:
+## cargo install diesel_cli --no-default-features --features postgres
+## Also make sure postgres sql is in your path environment variables...
+## There's an executable in your PG install directory which does this for you.
+## Consider the following:
+## What version of PostgresSQL do you have installed?
+## It sounds like diesel isn't finding the libraries that it needs,
+## which is a problem that I also ran into with the BigSQL PgSQL distribution.
+## The way I fixed this myself was to install the Enterprise DB version of PgSQL.
+## Then you need to setup a PQ_LIB_DIR enviroment variable that
+## points at the PostgreSQL/lib directory which is where pqlib.dll and pqlib.lib is located.
+## Here is the link to download EnterpriseDB
+## https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+## and here are instructions for pg-sys which diesel_CLI relies on:
+## https://github.com/sgrif/pq-sys
+## Also make sure that you are only installing it for the database that you are going to use
+## and have installed on your computer.
+## Could be MySql or SQLite as well but I don't know much about the installation
+## of diesel with those two.
+## After you've installed enterpriseDB make sure to reinstall diesel_CLI with the cargo install diesel_cli --no-default-features --features postgres --force command.﻿
+## The other is to just put your PQ_LIB_DIR environment variable directly on your path
+## and once you do that make sure to reinstall diesel.
+## Also, make sure the C:\PostgreSQL\bin folder is on your path as well.
+## Some of the libs in there are also required but I think the documentation assumes that
+## you've already put that on your path.  And of course you need to make sure that the PGSQL
+## server is running when you run diesel.
