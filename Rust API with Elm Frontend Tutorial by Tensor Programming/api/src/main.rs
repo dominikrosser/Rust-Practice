@@ -1,4 +1,4 @@
-#![feature(plugin, custom_derive, const_fn, decl_macro, attr_literals, custom_attribute)]
+#![feature(plugin, custom_derive, const_fn, decl_macro, attr_literals, custom_attribute, extern_prelude)]
 #![plugin(rocket_codegen)]
 
 #![feature(proc_macro_non_items)]
@@ -18,15 +18,22 @@ extern crate serde_derive;
 #[macro_use]
 extern crate serde_json;
 
+// Remove unnecessary imports in the end
 use dotenv::dotenv;
 use std::env;
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
+use rocket::catch;
+use rocket::catchers;
+use rocket::Request;
 
 mod schema;
 mod models;
 mod db;
 mod static_files;
+mod routes;
+
+use routes::*;
 
 fn rocket() -> rocket::Rocket {
         dotenv().ok();
@@ -36,7 +43,16 @@ fn rocket() -> rocket::Rocket {
         let pool = db::init_pool(database_url);
         rocket::ignite()
             .manage(pool)
-            .mount("/", routes![static_files::all, static_files::index])
+            .mount(
+                "/api/v1",
+                routes![index, new, show, delete, author, update]
+            )
+            .mount(
+                "/",
+                routes![static_files::all, static_files::index]
+            )
+            // FIXME: method catch not found for rocket::Rocket:
+            // .catch(catchers![not_found])
 }
 
 fn main() {
