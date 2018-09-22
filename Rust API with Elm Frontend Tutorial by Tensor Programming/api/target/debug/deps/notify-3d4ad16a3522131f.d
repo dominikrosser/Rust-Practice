@@ -1,0 +1,10 @@
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\notify-3d4ad16a3522131f.rmeta: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\windows.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\null.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\poll.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\debounce\mod.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\debounce\timer.rs
+
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\notify-3d4ad16a3522131f.d: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\windows.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\null.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\poll.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\debounce\mod.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\debounce\timer.rs
+
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\lib.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\windows.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\null.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\poll.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\debounce\mod.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.6\src\debounce\timer.rs:

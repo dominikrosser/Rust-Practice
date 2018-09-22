@@ -1,0 +1,8 @@
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\migrations_macros-15a1b2205db16903.dll: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\migrations.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\embed_migrations.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\util.rs
+
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\migrations_macros-15a1b2205db16903.d: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\migrations.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\embed_migrations.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\util.rs
+
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\lib.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\migrations.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\embed_migrations.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\migrations_macros-1.3.0\src\util.rs:

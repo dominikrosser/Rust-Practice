@@ -1,0 +1,11 @@
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\libtoml-18f63a9827e9679d.rlib: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\value.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\datetime.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\ser.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\de.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\tokens.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\macros.rs
+
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\toml-18f63a9827e9679d.d: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\value.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\datetime.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\ser.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\de.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\tokens.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\macros.rs
+
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\lib.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\value.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\datetime.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\ser.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\de.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\tokens.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.4.6\src\macros.rs:

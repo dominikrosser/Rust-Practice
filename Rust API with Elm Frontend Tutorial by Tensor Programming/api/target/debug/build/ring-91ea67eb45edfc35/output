@@ -1,0 +1,347 @@
+=::: ::\
+ALLUSERSPROFILE: C:\ProgramData
+APPDATA: C:\Users\drdrdrdrdrdr\AppData\Roaming
+ASL.LOG: Destination=file
+CARGO: \\?\C:\Users\drdrdrdrdrdr\.rustup\toolchains\nightly-x86_64-pc-windows-msvc\bin\cargo.exe
+CARGO_CFG_DEBUG_ASSERTIONS: 
+CARGO_CFG_PROC_MACRO: 
+CARGO_CFG_TARGET_ARCH: x86_64
+CARGO_CFG_TARGET_ENDIAN: little
+CARGO_CFG_TARGET_ENV: msvc
+CARGO_CFG_TARGET_FAMILY: windows
+CARGO_CFG_TARGET_FEATURE: fxsr,mmx,sse,sse2
+CARGO_CFG_TARGET_HAS_ATOMIC: 16,32,64,8,cas,ptr
+CARGO_CFG_TARGET_OS: windows
+CARGO_CFG_TARGET_POINTER_WIDTH: 64
+CARGO_CFG_TARGET_THREAD_LOCAL: 
+CARGO_CFG_TARGET_VENDOR: pc
+CARGO_CFG_WINDOWS: 
+CARGO_FEATURE_DEFAULT: 1
+CARGO_FEATURE_DEV_URANDOM_FALLBACK: 1
+CARGO_FEATURE_USE_HEAP: 1
+CARGO_HOME: C:\Users\drdrdrdrdrdr\.cargo
+CARGO_MAKEFLAGS: --jobserver-fds=__rust_jobserver_semaphore_4242284765 --jobserver-auth=__rust_jobserver_semaphore_4242284765
+CARGO_MANIFEST_DIR: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\ring-0.13.2
+CARGO_MANIFEST_LINKS: ring-asm
+CARGO_PKG_AUTHORS: Brian Smith <brian@briansmith.org>
+CARGO_PKG_DESCRIPTION: Safe, fast, small crypto using Rust.
+CARGO_PKG_HOMEPAGE: 
+CARGO_PKG_NAME: ring
+CARGO_PKG_VERSION: 0.13.2
+CARGO_PKG_VERSION_MAJOR: 0
+CARGO_PKG_VERSION_MINOR: 13
+CARGO_PKG_VERSION_PATCH: 2
+CARGO_PKG_VERSION_PRE: 
+COMMONPROGRAMFILES: C:\Program Files\Common Files
+COMMONPROGRAMFILES(X86): C:\Program Files (x86)\Common Files
+COMMONPROGRAMW6432: C:\Program Files\Common Files
+COMPUTERNAME: DESKTOP-TQQKNM6
+COMSPEC: C:\WINDOWS\system32\cmd.exe
+DEBUG: true
+DRIVERDATA: C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING: Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING: Default
+GIT_LFS_PATH: D:\Programme\Git LFS
+HOMEDRIVE: C:
+HOMEPATH: \Users\drdrdrdrdrdr
+HOST: x86_64-pc-windows-msvc
+LD_LIBRARY_PATH: C:\Users\drdrdrdrdrdr\.rustup\toolchains\nightly-x86_64-pc-windows-msvc\lib
+LIB: C:\PostgreSQL\pg10\lib
+LOCALAPPDATA: C:\Users\drdrdrdrdrdr\AppData\Local
+LOGONSERVER: \\DESKTOP-TQQKNM6
+NUMBER_OF_PROCESSORS: 8
+NUM_JOBS: 8
+ONEDRIVE: C:\Users\drdrdrdrdrdr\OneDrive
+OPT_LEVEL: 0
+OS: Windows_NT
+OUT_DIR: E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\build\ring-91ea67eb45edfc35\out
+PATH: E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps;C:\Users\drdrdrdrdrdr\.rustup\toolchains\nightly-x86_64-pc-windows-msvc\bin;C:\Users\drdrdrdrdrdr\.cargo\bin;C:\Users\drdrdrdrdrdr\.rustup\toolchains\nightly-x86_64-pc-windows-msvc\bin;D:\Programme\Oracle\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;D:\Programme\Git\cmd;D:\Programme\Git LFS;D:\Programme\Microsoft VS Code\bin;C:\Program Files\PostgreSQL\10\bin;D:\Programme\Python\Scripts\;D:\Programme\Python\;C:\Users\drdrdrdrdrdr\.cargo\bin;C:\Users\drdrdrdrdrdr\AppData\Local\Microsoft\WindowsApps;C:\Users\drdrdrdrdrdr\AppData\Local\GitHubDesktop\bin;C:\Users\drdrdrdrdrdr\AppData\Local\atom\bin
+PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+PQ_LIB_DIR: C:\Program Files\PostgreSQL\10\lib
+PROCESSOR_ARCHITECTURE: AMD64
+PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL: 6
+PROCESSOR_REVISION: 5e03
+PROFILE: debug
+PROGRAMDATA: C:\ProgramData
+PROGRAMFILES: C:\Program Files
+PROGRAMFILES(X86): C:\Program Files (x86)
+PROGRAMW6432: C:\Program Files
+PSMODULEPATH: C:\Users\drdrdrdrdrdr\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\PowerShell\Modules\
+PUBLIC: C:\Users\Public
+RUSTC: rustc
+RUSTDOC: rustdoc
+RUSTUP_HOME: C:\Users\drdrdrdrdrdr\.rustup
+RUSTUP_TOOLCHAIN: nightly-x86_64-pc-windows-msvc
+RUST_RECURSION_COUNT: 1
+SQLITE3_LIB_DIR: C:\PostgreSQL\pg10\lib
+SYSTEMDRIVE: C:
+SYSTEMROOT: C:\WINDOWS
+TARGET: x86_64-pc-windows-msvc
+TEMP: C:\Users\DRDRDR~1\AppData\Local\Temp
+TMP: C:\Users\DRDRDR~1\AppData\Local\Temp
+USERDOMAIN: DESKTOP-TQQKNM6
+USERDOMAIN_ROAMINGPROFILE: DESKTOP-TQQKNM6
+USERNAME: drdrdrdrdrdr
+USERPROFILE: C:\Users\drdrdrdrdrdr
+VS140COMNTOOLS: C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+WINDIR: C:\WINDOWS
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\aes.obj" "crypto/fipsmodule/aes/aes.c"
+aes.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\exponentiation.obj" "crypto/fipsmodule/bn/exponentiation.c"
+exponentiation.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\generic.obj" "crypto/fipsmodule/bn/generic.c"
+generic.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\montgomery.obj" "crypto/fipsmodule/bn/montgomery.c"
+montgomery.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\montgomery_inv.obj" "crypto/fipsmodule/bn/montgomery_inv.c"
+montgomery_inv.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\shift.obj" "crypto/fipsmodule/bn/shift.c"
+shift.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\e_aes.obj" "crypto/fipsmodule/cipher/e_aes.c"
+e_aes.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\crypto.obj" "crypto/crypto.c"
+crypto.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\ecp_nistz.obj" "crypto/fipsmodule/ec/ecp_nistz.c"
+ecp_nistz.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\ecp_nistz256.obj" "crypto/fipsmodule/ec/ecp_nistz256.c"
+ecp_nistz256.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\gfp_p256.obj" "crypto/fipsmodule/ec/gfp_p256.c"
+gfp_p256.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\gfp_p384.obj" "crypto/fipsmodule/ec/gfp_p384.c"
+gfp_p384.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\limbs.obj" "crypto/limbs/limbs.c"
+limbs.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\mem.obj" "crypto/mem.c"
+mem.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\gcm.obj" "crypto/fipsmodule/modes/gcm.c"
+gcm.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\curve25519.obj" "third_party/fiat/curve25519.c"
+curve25519.c
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\cpu-intel.obj" "crypto/cpu-intel.c"
+cpu-intel.c
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\lib.exe" "/OUT:E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\libring-core.a" "/nologo" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\aes-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\aesni-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\vpaes-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\x86_64-mont-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\x86_64-mont5-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\chacha-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\p256-x86_64-asm-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\aesni-gcm-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\ghash-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\poly1305-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\sha512-x86_64-nasm.obj" "C:\\Users\\drdrdrdrdrdr\\.cargo\\registry\\src\\github.com-1ecc6299db9ec823\\ring-0.13.2\\pregenerated\\sha256-x86_64-nasm.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\aes.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\exponentiation.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\generic.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\montgomery.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\montgomery_inv.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\shift.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\e_aes.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\crypto.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\ecp_nistz.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\ecp_nistz256.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\gfp_p256.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\gfp_p384.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\limbs.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\mem.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\gcm.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\curve25519.obj" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\cpu-intel.obj"
+exit code: 0
+cargo:rustc-link-lib=static=ring-core
+OPT_LEVEL = Some("0")
+TARGET = Some("x86_64-pc-windows-msvc")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("true")
+running "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\cl.exe" "/nologo" "/MD" "/Z7" "/I" "include" "/W4" "/GS" "/Gy" "/EHsc" "/GR-" "/Zc:wchar_t" "/Zc:forScope" "/Zc:inline" "/Zc:rvalueCast" "/sdl" "/Wall" "/wd4127" "/wd4464" "/wd4514" "/wd4710" "/wd4711" "/wd4820" "/wd5045" "/Od" "/RTCsu" "-c" "/FoE:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\constant_time_test.obj" "crypto/constant_time_test.c"
+constant_time_test.c
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.14.26428\\bin\\HostX64\\x64\\lib.exe" "/OUT:E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\libring-test.a" "/nologo" "E:\\dev\\Rust\\Rust-Practice\\Rust API with Elm Frontend Tutorial by Tensor Programming\\api\\target\\debug\\build\\ring-91ea67eb45edfc35\\out\\constant_time_test.obj"
+exit code: 0
+cargo:rustc-link-lib=static=ring-test
+cargo:rustc-link-search=native=E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\build\ring-91ea67eb45edfc35\out

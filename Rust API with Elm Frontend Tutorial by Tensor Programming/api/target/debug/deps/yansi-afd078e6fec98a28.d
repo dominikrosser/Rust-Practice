@@ -1,0 +1,11 @@
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\libyansi-afd078e6fec98a28.rlib: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\docify.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\macros.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\windows.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\paint.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\style.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\color.rs
+
+E:\dev\Rust\Rust-Practice\Rust API with Elm Frontend Tutorial by Tensor Programming\api\target\debug\deps\yansi-afd078e6fec98a28.d: C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\lib.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\docify.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\macros.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\windows.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\paint.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\style.rs C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\color.rs
+
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\lib.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\docify.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\macros.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\windows.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\paint.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\style.rs:
+C:\Users\drdrdrdrdrdr\.cargo\registry\src\github.com-1ecc6299db9ec823\yansi-0.4.0\src\color.rs:
