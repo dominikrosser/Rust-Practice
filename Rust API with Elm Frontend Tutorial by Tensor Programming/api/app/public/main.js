@@ -4471,9 +4471,10 @@ function _Browser_load(url)
 		}
 	}));
 }
-var author$project$Main$Model = function (books) {
-	return {books: books};
-};
+var author$project$Main$Model = F5(
+	function (books, title, author, published, errorMsg) {
+		return {author: author, books: books, errorMsg: errorMsg, published: published, title: title};
+	});
 var elm$core$Basics$False = {$: 'False'};
 var elm$core$Basics$True = {$: 'True'};
 var elm$core$Result$isOk = function (result) {
@@ -4953,7 +4954,7 @@ var elm$core$Platform$Cmd$batch = _Platform_batch;
 var elm$core$Platform$Cmd$none = elm$core$Platform$Cmd$batch(_List_Nil);
 var author$project$Main$init = function (_n0) {
 	return _Utils_Tuple2(
-		author$project$Main$Model(_List_Nil),
+		A5(author$project$Main$Model, _List_Nil, '', '', false, ''),
 		elm$core$Platform$Cmd$none);
 };
 var elm$core$Platform$Sub$batch = _Platform_batch;
@@ -4961,100 +4962,9 @@ var elm$core$Platform$Sub$none = elm$core$Platform$Sub$batch(_List_Nil);
 var author$project$Main$subscriptions = function (model) {
 	return elm$core$Platform$Sub$none;
 };
-var author$project$Main$GetBooks = function (a) {
-	return {$: 'GetBooks', a: a};
+var author$project$Main$DeleteBook = function (a) {
+	return {$: 'DeleteBook', a: a};
 };
-var author$project$Main$Book = F3(
-	function (title, author, published) {
-		return {author: author, published: published, title: title};
-	});
-var elm$core$List$foldrHelper = F4(
-	function (fn, acc, ctr, ls) {
-		if (!ls.b) {
-			return acc;
-		} else {
-			var a = ls.a;
-			var r1 = ls.b;
-			if (!r1.b) {
-				return A2(fn, a, acc);
-			} else {
-				var b = r1.a;
-				var r2 = r1.b;
-				if (!r2.b) {
-					return A2(
-						fn,
-						a,
-						A2(fn, b, acc));
-				} else {
-					var c = r2.a;
-					var r3 = r2.b;
-					if (!r3.b) {
-						return A2(
-							fn,
-							a,
-							A2(
-								fn,
-								b,
-								A2(fn, c, acc)));
-					} else {
-						var d = r3.a;
-						var r4 = r3.b;
-						var res = (ctr > 500) ? A3(
-							elm$core$List$foldl,
-							fn,
-							acc,
-							elm$core$List$reverse(r4)) : A4(elm$core$List$foldrHelper, fn, acc, ctr + 1, r4);
-						return A2(
-							fn,
-							a,
-							A2(
-								fn,
-								b,
-								A2(
-									fn,
-									c,
-									A2(fn, d, res))));
-					}
-				}
-			}
-		}
-	});
-var elm$core$List$foldr = F3(
-	function (fn, acc, ls) {
-		return A4(elm$core$List$foldrHelper, fn, acc, 0, ls);
-	});
-var elm$json$Json$Decode$field = _Json_decodeField;
-var elm$json$Json$Decode$at = F2(
-	function (fields, decoder) {
-		return A3(elm$core$List$foldr, elm$json$Json$Decode$field, decoder, fields);
-	});
-var elm$json$Json$Decode$bool = _Json_decodeBool;
-var elm$json$Json$Decode$map3 = _Json_map3;
-var elm$json$Json$Decode$string = _Json_decodeString;
-var author$project$Main$bookDecoder = A4(
-	elm$json$Json$Decode$map3,
-	author$project$Main$Book,
-	A2(
-		elm$json$Json$Decode$at,
-		_List_fromArray(
-			['title']),
-		elm$json$Json$Decode$string),
-	A2(
-		elm$json$Json$Decode$at,
-		_List_fromArray(
-			['author']),
-		elm$json$Json$Decode$string),
-	A2(
-		elm$json$Json$Decode$at,
-		_List_fromArray(
-			['published']),
-		elm$json$Json$Decode$bool));
-var elm$json$Json$Decode$list = _Json_decodeList;
-var author$project$Main$decodeBooks = A2(
-	elm$json$Json$Decode$at,
-	_List_fromArray(
-		['result']),
-	elm$json$Json$Decode$list(author$project$Main$bookDecoder));
 var elm$http$Http$Internal$EmptyBody = {$: 'EmptyBody'};
 var elm$http$Http$emptyBody = elm$http$Http$Internal$EmptyBody;
 var elm$core$Dict$RBEmpty_elm_builtin = {$: 'RBEmpty_elm_builtin'};
@@ -5635,19 +5545,6 @@ var elm$http$Http$Internal$Request = function (a) {
 	return {$: 'Request', a: a};
 };
 var elm$http$Http$request = elm$http$Http$Internal$Request;
-var elm$http$Http$get = F2(
-	function (url, decoder) {
-		return elm$http$Http$request(
-			{
-				body: elm$http$Http$emptyBody,
-				expect: elm$http$Http$expectJson(decoder),
-				headers: _List_Nil,
-				method: 'GET',
-				timeout: elm$core$Maybe$Nothing,
-				url: url,
-				withCredentials: false
-			});
-	});
 var elm$core$Basics$composeL = F3(
 	function (g, f, x) {
 		return g(
@@ -5659,6 +5556,61 @@ var elm$core$Task$Perform = function (a) {
 var elm$core$Task$andThen = _Scheduler_andThen;
 var elm$core$Task$succeed = _Scheduler_succeed;
 var elm$core$Task$init = elm$core$Task$succeed(_Utils_Tuple0);
+var elm$core$List$foldrHelper = F4(
+	function (fn, acc, ctr, ls) {
+		if (!ls.b) {
+			return acc;
+		} else {
+			var a = ls.a;
+			var r1 = ls.b;
+			if (!r1.b) {
+				return A2(fn, a, acc);
+			} else {
+				var b = r1.a;
+				var r2 = r1.b;
+				if (!r2.b) {
+					return A2(
+						fn,
+						a,
+						A2(fn, b, acc));
+				} else {
+					var c = r2.a;
+					var r3 = r2.b;
+					if (!r3.b) {
+						return A2(
+							fn,
+							a,
+							A2(
+								fn,
+								b,
+								A2(fn, c, acc)));
+					} else {
+						var d = r3.a;
+						var r4 = r3.b;
+						var res = (ctr > 500) ? A3(
+							elm$core$List$foldl,
+							fn,
+							acc,
+							elm$core$List$reverse(r4)) : A4(elm$core$List$foldrHelper, fn, acc, ctr + 1, r4);
+						return A2(
+							fn,
+							a,
+							A2(
+								fn,
+								b,
+								A2(
+									fn,
+									c,
+									A2(fn, d, res))));
+					}
+				}
+			}
+		}
+	});
+var elm$core$List$foldr = F3(
+	function (fn, acc, ls) {
+		return A4(elm$core$List$foldrHelper, fn, acc, 0, ls);
+	});
 var elm$core$List$map = F2(
 	function (f, xs) {
 		return A3(
@@ -5770,39 +5722,267 @@ var elm$http$Http$send = F2(
 			resultToMessage,
 			elm$http$Http$toTask(request_));
 	});
+var elm$json$Json$Decode$succeed = _Json_succeed;
+var author$project$Main$bookDelCmd = function (i) {
+	var decoder = elm$json$Json$Decode$succeed('');
+	var a = elm$core$String$fromInt(i);
+	var request = elm$http$Http$request(
+		{
+			body: elm$http$Http$emptyBody,
+			expect: elm$http$Http$expectJson(decoder),
+			headers: _List_Nil,
+			method: 'DELETE',
+			timeout: elm$core$Maybe$Nothing,
+			url: 'http://localhost:8000/api/v1/books/' + a,
+			withCredentials: false
+		});
+	return A2(elm$http$Http$send, author$project$Main$DeleteBook, request);
+};
+var author$project$Main$SetBook = function (a) {
+	return {$: 'SetBook', a: a};
+};
+var elm$json$Json$Encode$bool = _Json_wrap;
+var elm$json$Json$Encode$object = function (pairs) {
+	return _Json_wrap(
+		A3(
+			elm$core$List$foldl,
+			F2(
+				function (_n0, obj) {
+					var k = _n0.a;
+					var v = _n0.b;
+					return A3(_Json_addField, k, v, obj);
+				}),
+			_Json_emptyObject(_Utils_Tuple0),
+			pairs));
+};
+var elm$json$Json$Encode$string = _Json_wrap;
+var author$project$Main$bookEncoder = function (model) {
+	return elm$json$Json$Encode$object(
+		_List_fromArray(
+			[
+				_Utils_Tuple2(
+				'title',
+				elm$json$Json$Encode$string(model.title)),
+				_Utils_Tuple2(
+				'author',
+				elm$json$Json$Encode$string(model.author)),
+				_Utils_Tuple2(
+				'published',
+				elm$json$Json$Encode$bool(model.published))
+			]));
+};
+var elm$json$Json$Decode$field = _Json_decodeField;
+var elm$json$Json$Decode$string = _Json_decodeString;
+var author$project$Main$statusDecoder = A2(elm$json$Json$Decode$field, 'status', elm$json$Json$Decode$string);
+var elm$http$Http$Internal$StringBody = F2(
+	function (a, b) {
+		return {$: 'StringBody', a: a, b: b};
+	});
+var elm$http$Http$jsonBody = function (value) {
+	return A2(
+		elm$http$Http$Internal$StringBody,
+		'application/json',
+		A2(elm$json$Json$Encode$encode, 0, value));
+};
+var elm$http$Http$post = F3(
+	function (url, body, decoder) {
+		return elm$http$Http$request(
+			{
+				body: body,
+				expect: elm$http$Http$expectJson(decoder),
+				headers: _List_Nil,
+				method: 'POST',
+				timeout: elm$core$Maybe$Nothing,
+				url: url,
+				withCredentials: false
+			});
+	});
+var author$project$Main$addBook = function (model) {
+	var url = 'http://localhost:8000/api/v1/books';
+	var body = elm$http$Http$jsonBody(
+		author$project$Main$bookEncoder(model));
+	return A3(elm$http$Http$post, url, body, author$project$Main$statusDecoder);
+};
+var author$project$Main$bookPostCmd = function (model) {
+	return A2(
+		elm$http$Http$send,
+		author$project$Main$SetBook,
+		author$project$Main$addBook(model));
+};
+var author$project$Main$GetBooks = function (a) {
+	return {$: 'GetBooks', a: a};
+};
+var author$project$Main$Book = F4(
+	function (id, title, author, published) {
+		return {author: author, id: id, published: published, title: title};
+	});
+var elm$json$Json$Decode$at = F2(
+	function (fields, decoder) {
+		return A3(elm$core$List$foldr, elm$json$Json$Decode$field, decoder, fields);
+	});
+var elm$json$Json$Decode$bool = _Json_decodeBool;
+var elm$json$Json$Decode$int = _Json_decodeInt;
+var elm$json$Json$Decode$map4 = _Json_map4;
+var author$project$Main$bookDecoder = A5(
+	elm$json$Json$Decode$map4,
+	author$project$Main$Book,
+	A2(
+		elm$json$Json$Decode$at,
+		_List_fromArray(
+			['id']),
+		elm$json$Json$Decode$int),
+	A2(
+		elm$json$Json$Decode$at,
+		_List_fromArray(
+			['title']),
+		elm$json$Json$Decode$string),
+	A2(
+		elm$json$Json$Decode$at,
+		_List_fromArray(
+			['author']),
+		elm$json$Json$Decode$string),
+	A2(
+		elm$json$Json$Decode$at,
+		_List_fromArray(
+			['published']),
+		elm$json$Json$Decode$bool));
+var elm$json$Json$Decode$list = _Json_decodeList;
+var author$project$Main$decodeBooks = A2(
+	elm$json$Json$Decode$at,
+	_List_fromArray(
+		['result']),
+	elm$json$Json$Decode$list(author$project$Main$bookDecoder));
+var elm$http$Http$get = F2(
+	function (url, decoder) {
+		return elm$http$Http$request(
+			{
+				body: elm$http$Http$emptyBody,
+				expect: elm$http$Http$expectJson(decoder),
+				headers: _List_Nil,
+				method: 'GET',
+				timeout: elm$core$Maybe$Nothing,
+				url: url,
+				withCredentials: false
+			});
+	});
 var author$project$Main$getBooks = function () {
 	var url = 'http://localhost:8000/api/v1/books';
 	var req = A2(elm$http$Http$get, url, author$project$Main$decodeBooks);
 	return A2(elm$http$Http$send, author$project$Main$GetBooks, req);
 }();
 var elm$core$Debug$log = _Debug_log;
+var author$project$Main$httpBookCompleted = F2(
+	function (model, result) {
+		if (result.$ === 'Ok') {
+			var string = result.a;
+			return _Utils_Tuple2(
+				A2(
+					elm$core$Debug$log,
+					'Status Complete',
+					_Utils_update(
+						model,
+						{errorMsg: ''})),
+				elm$core$Platform$Cmd$none);
+		} else {
+			var errorHttp = result.a;
+			return _Utils_Tuple2(
+				_Utils_update(
+					model,
+					{errorMsg: 'Error...TODO convert error to string'}),
+				elm$core$Platform$Cmd$none);
+		}
+	});
+var elm$core$Basics$neq = _Utils_notEqual;
+var elm$core$Basics$not = _Basics_not;
+var elm$core$List$filter = F2(
+	function (isGood, list) {
+		return A3(
+			elm$core$List$foldr,
+			F2(
+				function (x, xs) {
+					return isGood(x) ? A2(elm$core$List$cons, x, xs) : xs;
+				}),
+			_List_Nil,
+			list);
+	});
 var author$project$Main$update = F2(
 	function (msg, model) {
-		if (msg.$ === 'GetBooks') {
-			if (msg.a.$ === 'Ok') {
-				var json = msg.a.a;
+		switch (msg.$) {
+			case 'GetBooks':
+				if (msg.a.$ === 'Ok') {
+					var json = msg.a.a;
+					return _Utils_Tuple2(
+						_Utils_update(
+							model,
+							{books: json}),
+						elm$core$Platform$Cmd$none);
+				} else {
+					var err = msg.a.a;
+					return _Utils_Tuple2(
+						A2(elm$core$Debug$log, 'An error occured while getting the books', model),
+						elm$core$Platform$Cmd$none);
+				}
+			case 'RequestBooks':
+				return _Utils_Tuple2(model, author$project$Main$getBooks);
+			case 'SetBook':
+				var result = msg.a;
+				return A2(author$project$Main$httpBookCompleted, model, result);
+			case 'DeleteBook':
+				var result = msg.a;
+				return A2(author$project$Main$httpBookCompleted, model, result);
+			case 'PostBook':
 				return _Utils_Tuple2(
 					_Utils_update(
 						model,
-						{books: json}),
-					elm$core$Platform$Cmd$none);
-			} else {
-				var err = msg.a.a;
+						{author: '', title: ''}),
+					author$project$Main$bookPostCmd(model));
+			case 'DelBook':
+				var i = msg.a;
 				return _Utils_Tuple2(
-					A2(elm$core$Debug$log, 'An error occured while getting the books', model),
+					_Utils_update(
+						model,
+						{
+							books: A2(
+								elm$core$List$filter,
+								function (b) {
+									return !_Utils_eq(b.id, i);
+								},
+								model.books)
+						}),
+					author$project$Main$bookDelCmd(i));
+			case 'GetTitle':
+				var s = msg.a;
+				return _Utils_Tuple2(
+					_Utils_update(
+						model,
+						{title: s}),
 					elm$core$Platform$Cmd$none);
-			}
-		} else {
-			return _Utils_Tuple2(model, author$project$Main$getBooks);
+			case 'GetAuthor':
+				var s = msg.a;
+				return _Utils_Tuple2(
+					_Utils_update(
+						model,
+						{author: s}),
+					elm$core$Platform$Cmd$none);
+			default:
+				return _Utils_Tuple2(
+					_Utils_update(
+						model,
+						{published: !model.published}),
+					elm$core$Platform$Cmd$none);
 		}
 	});
 var author$project$Main$RequestBooks = {$: 'RequestBooks'};
-var author$project$Main$boolToString = function (b) {
-	return b ? 'True' : 'False';
+var author$project$Main$GetAuthor = function (a) {
+	return {$: 'GetAuthor', a: a};
 };
+var author$project$Main$GetPublished = {$: 'GetPublished'};
+var author$project$Main$GetTitle = function (a) {
+	return {$: 'GetTitle', a: a};
+};
+var author$project$Main$PostBook = {$: 'PostBook'};
 var elm$json$Json$Decode$map = _Json_map1;
 var elm$json$Json$Decode$map2 = _Json_map2;
-var elm$json$Json$Decode$succeed = _Json_succeed;
 var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 	switch (handler.$) {
 		case 'Normal':
@@ -5815,9 +5995,154 @@ var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
-var elm$html$Html$li = _VirtualDom_node('li');
+var elm$html$Html$button = _VirtualDom_node('button');
+var elm$html$Html$div = _VirtualDom_node('div');
+var elm$html$Html$input = _VirtualDom_node('input');
+var elm$html$Html$label = _VirtualDom_node('label');
 var elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var elm$html$Html$text = elm$virtual_dom$VirtualDom$text;
+var elm$html$Html$Attributes$stringProperty = F2(
+	function (key, string) {
+		return A2(
+			_VirtualDom_property,
+			key,
+			elm$json$Json$Encode$string(string));
+	});
+var elm$html$Html$Attributes$for = elm$html$Html$Attributes$stringProperty('htmlFor');
+var elm$html$Html$Attributes$id = elm$html$Html$Attributes$stringProperty('id');
+var elm$html$Html$Attributes$type_ = elm$html$Html$Attributes$stringProperty('type');
+var elm$html$Html$Attributes$value = elm$html$Html$Attributes$stringProperty('value');
+var elm$virtual_dom$VirtualDom$Normal = function (a) {
+	return {$: 'Normal', a: a};
+};
+var elm$virtual_dom$VirtualDom$on = _VirtualDom_on;
+var elm$html$Html$Events$on = F2(
+	function (event, decoder) {
+		return A2(
+			elm$virtual_dom$VirtualDom$on,
+			event,
+			elm$virtual_dom$VirtualDom$Normal(decoder));
+	});
+var elm$html$Html$Events$onClick = function (msg) {
+	return A2(
+		elm$html$Html$Events$on,
+		'click',
+		elm$json$Json$Decode$succeed(msg));
+};
+var elm$html$Html$Events$alwaysStop = function (x) {
+	return _Utils_Tuple2(x, true);
+};
+var elm$virtual_dom$VirtualDom$MayStopPropagation = function (a) {
+	return {$: 'MayStopPropagation', a: a};
+};
+var elm$html$Html$Events$stopPropagationOn = F2(
+	function (event, decoder) {
+		return A2(
+			elm$virtual_dom$VirtualDom$on,
+			event,
+			elm$virtual_dom$VirtualDom$MayStopPropagation(decoder));
+	});
+var elm$html$Html$Events$targetValue = A2(
+	elm$json$Json$Decode$at,
+	_List_fromArray(
+		['target', 'value']),
+	elm$json$Json$Decode$string);
+var elm$html$Html$Events$onInput = function (tagger) {
+	return A2(
+		elm$html$Html$Events$stopPropagationOn,
+		'input',
+		A2(
+			elm$json$Json$Decode$map,
+			elm$html$Html$Events$alwaysStop,
+			A2(elm$json$Json$Decode$map, tagger, elm$html$Html$Events$targetValue)));
+};
+var author$project$Main$bookForm = function (model) {
+	return A2(
+		elm$html$Html$div,
+		_List_fromArray(
+			[
+				elm$html$Html$Attributes$id('form')
+			]),
+		_List_fromArray(
+			[
+				A2(
+				elm$html$Html$label,
+				_List_fromArray(
+					[
+						elm$html$Html$Attributes$for('title')
+					]),
+				_List_fromArray(
+					[
+						elm$html$Html$text(' Title ')
+					])),
+				A2(
+				elm$html$Html$input,
+				_List_fromArray(
+					[
+						elm$html$Html$Attributes$id('title'),
+						elm$html$Html$Attributes$type_('text'),
+						elm$html$Html$Attributes$value(model.title),
+						elm$html$Html$Events$onInput(author$project$Main$GetTitle)
+					]),
+				_List_Nil),
+				A2(
+				elm$html$Html$label,
+				_List_fromArray(
+					[
+						elm$html$Html$Attributes$for('author')
+					]),
+				_List_fromArray(
+					[
+						elm$html$Html$text(' Author ')
+					])),
+				A2(
+				elm$html$Html$input,
+				_List_fromArray(
+					[
+						elm$html$Html$Attributes$id('author'),
+						elm$html$Html$Attributes$type_('text'),
+						elm$html$Html$Attributes$value(model.author),
+						elm$html$Html$Events$onInput(author$project$Main$GetAuthor)
+					]),
+				_List_Nil),
+				A2(
+				elm$html$Html$label,
+				_List_fromArray(
+					[
+						elm$html$Html$Attributes$for('published')
+					]),
+				_List_fromArray(
+					[
+						elm$html$Html$text(' Published ')
+					])),
+				A2(
+				elm$html$Html$input,
+				_List_fromArray(
+					[
+						elm$html$Html$Attributes$id('published '),
+						elm$html$Html$Attributes$type_('checkbox'),
+						elm$html$Html$Events$onClick(author$project$Main$GetPublished)
+					]),
+				_List_Nil),
+				A2(
+				elm$html$Html$button,
+				_List_fromArray(
+					[
+						elm$html$Html$Events$onClick(author$project$Main$PostBook)
+					]),
+				_List_fromArray(
+					[
+						elm$html$Html$text('Post Book!')
+					]))
+			]));
+};
+var author$project$Main$DelBook = function (a) {
+	return {$: 'DelBook', a: a};
+};
+var author$project$Main$boolToString = function (b) {
+	return b ? 'True' : 'False';
+};
+var elm$html$Html$li = _VirtualDom_node('li');
 var elm$html$Html$ul = _VirtualDom_node('ul');
 var author$project$Main$bookView = function (book) {
 	return A2(
@@ -5846,27 +6171,19 @@ var author$project$Main$bookView = function (book) {
 					[
 						elm$html$Html$text(
 						author$project$Main$boolToString(book.published))
+					])),
+				A2(
+				elm$html$Html$button,
+				_List_fromArray(
+					[
+						elm$html$Html$Events$onClick(
+						author$project$Main$DelBook(book.id))
+					]),
+				_List_fromArray(
+					[
+						elm$html$Html$text('X')
 					]))
 			]));
-};
-var elm$html$Html$button = _VirtualDom_node('button');
-var elm$html$Html$div = _VirtualDom_node('div');
-var elm$virtual_dom$VirtualDom$Normal = function (a) {
-	return {$: 'Normal', a: a};
-};
-var elm$virtual_dom$VirtualDom$on = _VirtualDom_on;
-var elm$html$Html$Events$on = F2(
-	function (event, decoder) {
-		return A2(
-			elm$virtual_dom$VirtualDom$on,
-			event,
-			elm$virtual_dom$VirtualDom$Normal(decoder));
-	});
-var elm$html$Html$Events$onClick = function (msg) {
-	return A2(
-		elm$html$Html$Events$on,
-		'click',
-		elm$json$Json$Decode$succeed(msg));
 };
 var author$project$Main$view = function (model) {
 	return A2(
@@ -5888,7 +6205,7 @@ var author$project$Main$view = function (model) {
 					[
 						elm$html$Html$text('Get Books!')
 					])),
-				elm$html$Html$text('Hello World')
+				author$project$Main$bookForm(model)
 			]));
 };
 var elm$browser$Browser$External = function (a) {
