@@ -4,10 +4,10 @@ use rocket::response::NamedFile;
 
 #[get("/")]
 fn index() -> io::Result<NamedFile> {
-    NamedFile::open("public/index.html")
+    NamedFile::open("./app/public/index.html")
 }
 
 #[get("/<file..>", rank = 5)]
 fn all(file: PathBuf) -> Option<NamedFile> {
-    NamedFile::open(Path::new("public/").join(file)).ok()
+    NamedFile::open(Path::new("./app/public/").join(file)).ok()
 }

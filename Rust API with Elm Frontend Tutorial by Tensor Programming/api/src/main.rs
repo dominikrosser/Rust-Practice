@@ -49,7 +49,7 @@ fn rocket() -> rocket::Rocket {
             )
             .mount(
                 "/",
-                routes![static_files::all, static_files::index]
+                routes![static_files::index, static_files::all]
             )
             // FIXME: method catch not found for rocket::Rocket:
             // .catch(catchers![not_found])

@@ -1,1 +1,0 @@
-{"rustc":69170261113966331,"features":"[]","target":8929461428342892239,"profile":14245719688690734572,"path":9291889241481706202,"deps":[["byteorder v1.2.6","byteorder",9683242163732695914],["safemem v0.2.0","safemem",468811712360027697]],"local":[{"Precalculated":"0.6.0"}],"rustflags":[],"edition":"Edition2015"}

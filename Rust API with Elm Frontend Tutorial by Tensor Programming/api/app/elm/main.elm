@@ -1,5 +1,6 @@
-module Main exposing (..)
+module Main exposing (Book, Model, Msg(..), bookDecoder, bookView, boolToString, decodeBooks, getBooks, init, main, subscriptions, update, view)
 
+import Browser exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
@@ -19,7 +20,8 @@ type alias Model =
     { books : List Book }
 
 
-init =
+init : () -> ( Model, Cmd Msg )
+init _ =
     ( Model [], Cmd.none )
 
 
@@ -34,8 +36,8 @@ update msg model =
         GetBooks (Ok json) ->
             ( { model | books = json }, Cmd.none )
 
-        GetBooks (Err e) ->
-            ( Debug.log (toString e) model, Cmd.none )
+        GetBooks (Err err) ->
+            ( Debug.log "An error occured while getting the books" model, Cmd.none )
 
         RequestBooks ->
             ( model, getBooks )
@@ -50,7 +52,8 @@ getBooks =
         req =
             Http.get url decodeBooks
     in
-        Http.send GetBooks req
+    Http.send GetBooks req
+
 
 decodeBooks : Json.Decoder (List Book)
 decodeBooks =
@@ -71,6 +74,7 @@ view model =
     div []
         [ div [] <| List.map bookView model.books
         , button [ onClick RequestBooks ] [ text "Get Books!" ]
+        , text "Hello World"
         ]
 
 
@@ -79,16 +83,26 @@ bookView book =
     ul []
         [ li [] [ text book.title ]
         , li [] [ text book.author ]
-        , li [] [ book.published |> toString |> text ]
+        , li [] [ book.published |> boolToString |> text ]
         ]
+
+
+boolToString : Bool -> String
+boolToString b =
+    if b == True then
+        "True"
+
+    else
+        "False"
 
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.none
 
+
 main =
-    Html.program
+    Browser.element
         { init = init
         , update = update
         , view = view
